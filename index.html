@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="project-header">
+      <h1>Calculator</h1>
+      <p class="subtitle">"where Logic Meets Numbers."</p>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" id="display" role="textbox" aria-live="polite" tabindex="0">0</div>
+
+      <div class="keys" role="group" aria-label="Calculator buttons">
+
+        <button class="btn btn-ac" data-action="clear" aria-label="All clear">AC</button>
+        <button class="btn btn-back" data-action="back" aria-label="Backspace">⌫</button>
+        <button class="btn btn-op" data-value="%" aria-label="Modulo">%</button>
+        <button class="btn btn-op" data-value="/" aria-label="Divide">÷</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn btn-op" data-value="*" aria-label="Multiply">×</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn btn-op" data-value="-" aria-label="Subtract">−</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn btn-op" data-value="+" aria-label="Add">+</button>
+
+        <button class="btn btn-zero" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn btn-equals" data-action="equals" aria-label="Equals">=</button>
+      </div>
+    </section>
+
+    <footer class="project-footer">
+      <a class="name" href="#" target="_blank" rel="noopener">PS Arithmetic</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
